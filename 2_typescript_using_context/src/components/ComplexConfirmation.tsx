@@ -40,7 +40,7 @@ const ComplexConfirmation: React.FC<ConfirmDialogProps<Props, Res>> = ({
           <div className="static-modal">
             <Modal animation={false} show={show} onHide={dismiss}>
               <Modal.Header>
-                <Modal.Title>theme: ${theme}</Modal.Title>
+                <Modal.Title>theme: {theme}</Modal.Title>
               </Modal.Header>
               <Modal.Body>
                 {message}
