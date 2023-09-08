@@ -4,10 +4,16 @@ This repository provides sample implementations for the [react-confirm](https://
 
 Referenced samples are from the original `react-confirm` repository, and these samples are designed to demonstrate:
 
-- **1_typescript**: A basic implementation using TypeScript and Bootstrap.
-- **2_typescript_using_context**: An enhanced version of the first sample by integrating React's Context API.
+## 1_typescript
+A basic implementation using TypeScript and Bootstrap.
 
-These examples serve as a practical guide for developers to grasp the integration and usage of the `react-confirm` library in their React applications.
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/haradakunihiko/react-confirm-sample/tree/main/1_typescript)
+
+## 2_typescript_using_context
+An enhanced version of the first sample by integrating React's Context API.
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/haradakunihiko/react-confirm-sample/tree/main/2_typescript_using_context)
+
 
 ## Getting Started
 
