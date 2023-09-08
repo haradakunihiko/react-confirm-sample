@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { confirm, confirmComplex } from '../util/confirm';
-import { Alert } from 'react-bootstrap';
+import { Alert, Button } from 'react-bootstrap';
 
 const handleOnClick = async () => {
   if (await confirm('Are your sure?')) {
@@ -25,8 +25,8 @@ const App = () => {
         Please note that interactions with the sample dialogs output details to the console.<br />
         Review the console output while interacting with the dialogs to observe the behavior and outcomes
       </Alert>
-      <button onClick={handleOnClick}>simple</button>
-      <button onClick={handleOnClickComplex}>complex</button>
+      <Button size="lg" onClick={handleOnClick}>simple</Button>
+      <Button size="lg" onClick={handleOnClickComplex}>complex</Button>
     </div>
   );
 }
