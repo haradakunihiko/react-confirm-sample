@@ -1,35 +1,40 @@
 import * as React from 'react';
 import { confirm, confirmComplex } from '../util/confirm';
-import { Alert, Button } from 'react-bootstrap';
-
-
-const handleOnClick = async () => {
-  if (await confirm('Are your sure?')) {
-    console.log('yes');
-  } else {
-    console.log('no');
-  }
-}
-
-const handleOnClickComplex = () => {
-  confirmComplex({ message: 'hello' }).then(({ button, input }) => {
-    console.log('proceed! pressed:' + button + ' input:' + input);
-  }, () => {
-    console.log('cancel!');
-  });
-}
+import { Button } from 'react-bootstrap';
 
 const App = () => {
+  const [message, setMessage] = React.useState('');
+
+  const handleOnClick = async () => {
+    if (await confirm('Are your sure?')) {
+      setMessage('yes');
+    } else {
+      setMessage('no');
+    }
+  };
+
+  const handleOnClickComplex = () => {
+    confirmComplex({ message: 'hello' }).then(
+      ({ button, input }) => {
+        setMessage('proceed! pressed:' + button + ' input:' + input);
+      },
+      () => {
+        setMessage('cancel!');
+      }
+    );
+  };
+
   return (
     <div>
-      <Alert variant="primary" transition={false} className="h1">
-      Please note that interactions with the sample dialogs output details to the console.<br />
-      Review the console output while interacting with the dialogs to observe the behavior and outcomes
-      </Alert>
-      <Button size="lg" onClick={handleOnClick}>simple</Button>
-      <Button size="lg" onClick={handleOnClickComplex}>complex</Button>
+      <Button size="lg" onClick={handleOnClick}>
+        simple
+      </Button>
+      <Button size="lg" onClick={handleOnClickComplex}>
+        complex
+      </Button>
+      <div>{message}</div>
     </div>
   );
-}
+};
 
 export default App;
