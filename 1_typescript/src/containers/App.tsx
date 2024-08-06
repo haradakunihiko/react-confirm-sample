@@ -6,7 +6,7 @@ const App = () => {
   const [message, setMessage] = React.useState('');
 
   const handleOnClick = async () => {
-    if (await confirm('Are your sure?')) {
+    if (await confirm({confirmation: 'Are your sure?'})) {
       setMessage('yes');
     } else {
       setMessage('no');
