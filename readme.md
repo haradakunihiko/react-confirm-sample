@@ -14,6 +14,9 @@ An enhanced version of the first sample by integrating React's Context API.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/haradakunihiko/react-confirm-sample/tree/main/2_typescript_using_context)
 
+## Archive
+
+The `archive/` directory contains historical example implementations that were previously located in the original [react-confirm](https://github.com/haradakunihiko/react-confirm) repository. These samples are preserved for reference purposes.
 
 ## Getting Started
 
