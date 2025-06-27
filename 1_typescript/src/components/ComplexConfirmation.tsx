@@ -3,7 +3,7 @@ import  * as React from 'react';
 import Button from 'react-bootstrap/Button'
 import FormControl from 'react-bootstrap/FormControl'
 import Modal from 'react-bootstrap/Modal'
-import { confirmable, ConfirmDialog } from 'react-confirm';
+import { confirmable, ConfirmDialog, createConfirmation } from 'react-confirm';
 
 
 export interface Props {
@@ -55,4 +55,4 @@ const ComplexConfirmation: ConfirmDialog<Props, Res> = ({
 }
 
 
-export default confirmable(ComplexConfirmation);
+export const confirm = createConfirmation(confirmable(ComplexConfirmation));

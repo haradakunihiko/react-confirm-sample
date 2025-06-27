@@ -3,7 +3,7 @@ import * as React from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 
-import { confirmable, ConfirmDialog } from 'react-confirm';
+import { confirmable, ConfirmDialog, ContextAwareConfirmation, createConfirmation } from 'react-confirm';
 import { ThemeContext } from '../context/context';
 
 export interface Props {
@@ -34,4 +34,4 @@ const Confirmation: ConfirmDialog<Props, boolean> = (props) => (
   </ThemeContext.Consumer>
 );
 
-export default confirmable(Confirmation);
+export default ContextAwareConfirmation.createConfirmation(confirmable(Confirmation));

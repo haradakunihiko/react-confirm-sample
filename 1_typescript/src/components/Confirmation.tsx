@@ -3,7 +3,8 @@ import * as React from 'react';
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 
-import { confirmable, ConfirmDialog } from 'react-confirm';
+import { confirmable, ConfirmDialog, createConfirmation } from 'react-confirm';
+
 
 export interface Props {
   okLabel?: string;
@@ -29,4 +30,4 @@ const Confirmation: ConfirmDialog<Props, boolean> = (props) => (
   </div>
 );
 
-export default confirmable(Confirmation);
+export const confirm = createConfirmation(confirmable(Confirmation));
