@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { confirm, confirmComplex } from '../util/confirm';
+import confirm from '../components/Confirmation';
+import confirmComplex from '../components/ComplexConfirmation';
 import { Alert, Button } from 'react-bootstrap';
 
 const App = () => {
