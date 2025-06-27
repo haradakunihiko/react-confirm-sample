@@ -53,6 +53,10 @@ The application should then be running on `http://localhost:3000`.
 
 Please note that interactions with the sample dialogs output details to the console. Review the console output while interacting with the dialogs to observe the behavior and outcomes.
 
+## 📚 Legacy Examples (Older versions)
+- [Bootstrap Example](https://codesandbox.io/s/react-confirm-with-react-bootstrap-kjju1) - react-confirm with React Bootstrap (older API)
+- [Chakra UI Example](https://codesandbox.io/s/react-confirm-with-chakra-ui-oidpf1) - react-confirm with Chakra UI (older API)
+
 ## Contributing
 
 Feedback, issues, and pull requests are welcome!
